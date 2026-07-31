@@ -99,7 +99,7 @@ async function main() {
     const s = darkBase();
     s.addText(stat, {
       x: 0.7, y: 1.75, w: 11.93, h: 2.2, margin: 0, align: "center",
-      fontFace: FONT, fontSize: 120, bold: true, color: ACCENT,
+      fontFace: FONT, fontSize: stat.length > 5 ? 84 : 120, bold: true, color: ACCENT,
     });
     s.addText(label, {
       x: 1.6, y: 4.1, w: 10.13, h: 0.7, margin: 0, align: "center",

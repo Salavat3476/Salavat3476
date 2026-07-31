@@ -51,7 +51,8 @@ function sceneSVG(opts) {
     </linearGradient>
     <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.62"/>
+      <stop offset="0.45" stop-color="#000000" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.82"/>
     </linearGradient>
   </defs>
   <rect width="${W}" height="${H}" fill="url(#sky)"/>`;
@@ -117,7 +118,7 @@ function sceneSVG(opts) {
     svg += catGroup(roof.x + roof.w * 0.55, H - roof.h, 1.5, frontFill);
   }
 
-  svg += `<rect x="0" y="${H - 470}" width="${W}" height="470" fill="url(#fade)"/></svg>`;
+  svg += `<rect x="0" y="${H - 560}" width="${W}" height="560" fill="url(#fade)"/></svg>`;
   return svg;
 }
 
